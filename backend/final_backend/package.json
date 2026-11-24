@@ -1,0 +1,23 @@
+{
+  "name": "final_backend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "biome check",
+    "format": "biome format --write",
+    "postinstall": "prisma skills sync || exit 0"
+  },
+  "dependencies": {
+    "next": "16.4.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.2",
+    "babel-plugin-react-compiler": "1.0.0",
+    "prisma": "8.0.0-rc.35"
+  }
+}
